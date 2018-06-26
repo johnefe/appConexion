@@ -36,4 +36,11 @@ class User extends Authenticatable
     public function comments(){
         return $this->hasMany('App\Comment');
     }
+
+    public function socialMedia(){
+
+        return $this->hasMany('App\socialMedia');
+       // return $this->belongsTo('App\User', 'foreign_key', 'other_key');
+        //return $this->hasOne(socialMedia::class);
+    }
 }

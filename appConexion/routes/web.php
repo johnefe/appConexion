@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::get('/users','UsersController@index')->name('users');
 Route::get('/users/{id}','UsersController@getUser')->name('users');
 
+Route::get('/medias','SocialMediaController@index')->name('medias');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
