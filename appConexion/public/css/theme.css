@@ -1,0 +1,16 @@
+@import url("core/text-typography.css");
+@import url("core/default.css");
+@import url("core/margin.css");
+@import url("core/padding.css");
+@import url("core/background.css");
+@import url("core/color.css");
+@import url("core/border.css");
+@import url("core/shadow.css");
+@import url("core/menu.css");
+@import url("core/form-and-input.css");
+@import url("core/area-bg.css");
+@import url("core/area-title.css");
+@import url("core/home-area.css");
+@import url("core/slider-area.css");
+@import url("core/box.css");
+@import url("core/screenshot.css");

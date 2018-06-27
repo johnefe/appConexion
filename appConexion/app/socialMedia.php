@@ -9,8 +9,9 @@ class socialMedia extends Model
     //
     protected $table ="social_media";
 
-    public function user(){
+   // public function user(){
     	//return $this->belongsTo('App\User');
-    	return $this->belongsTo(User::class);
-    }
+    	//return $this->belongsTo(User::class);
+    //}
+    
 }

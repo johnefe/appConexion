@@ -1,4 +1,4 @@
-@extends("layouts.app")
+@extends("layouts.base")
 
 @section("content")
 	<div class="container">
@@ -19,6 +19,10 @@
 									<strong>{{$comment->body}}</strong>
 								@endforeach
 							</div>
+						@endforeach
+						@foreach($redes as $redesSociales)
+							{{$redesSociales->title_app}}
+
 						@endforeach
 						</ul>
 					</div>

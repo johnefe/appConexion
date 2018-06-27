@@ -1,0 +1,46 @@
+/*--------------------
+    BACKGROUND
+---------------------*/
+
+.bg-theme {
+    background: #F5F5F5; /*promotions*/
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-black {
+    background-color: #000000;
+}
+
+.bg-dark {
+    background: #424242; /*footer*/
+    color: #ffffff;
+}
+
+.bg-dark-low{
+    background:#616161;
+     color: #ffffff;
+}
+
+
+.bg-sky-gray {/* contact area*/
+    background: #f7f9fc;
+}
+
+.bg-extra-medium-gray {
+    background-color: #939393;
+}
+
+.bg-medium-gray {
+    background-color: #dbdbdb;
+}
+
+.bg-extra-light-gray {
+    background-color: #e0e0e0
+}
