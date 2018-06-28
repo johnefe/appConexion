@@ -1,5 +1,4 @@
 /*--------------------------------------------------------------------------------------
-    1. SLIDER AREA
     2. FEATURES AREA
     3. FUN FACT AREA
     4. COURSE AERA
@@ -26,22 +25,6 @@
 ----------------------------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
-
-/*--------------------------
-    1. SLIDER AREA
------------------------------*/
-
-.slide-bg-one {
-    background: rgba(0, 0, 0, 0) url("/img/slider/slide_1.jpg") no-repeat scroll center center / cover;
-}
-
-.slide-bg-two {
-    background: rgba(0, 0, 0, 0) url("/img/slider/slide_2.jpg") no-repeat scroll center center / cover;
-}
-
-.slide-bg-three {
-    background: rgba(0, 0, 0, 0) url("/img/slider/slide_3.jpg") no-repeat scroll center center / cover;
-}
 
 
 /*--------------------------------

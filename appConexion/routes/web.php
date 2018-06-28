@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+ //   return view('inicio');
+//});
+Route::get('/','InicioController@index');
+
 
 Route::get('/users','UsersController@index')->name('users');
 Route::get('/users/{id}','UsersController@getUser')->name('users');
