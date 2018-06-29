@@ -4,13 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class About extends Model
+class Heart extends Model
 {
-    
-    protected $table ="ours";
+    //
+    protected $table ="make_heart";
 
     protected $fillable=[
-    	'title','body',
+    	'title','body','url_img','link_video','icon',
     ];
     
     protected $hidden = [

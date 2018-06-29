@@ -4,13 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class About extends Model
+class Promotion extends Model
 {
-    
-    protected $table ="ours";
+    protected $table ="promotions";
 
     protected $fillable=[
-    	'title','body',
+    	'title','body','body_2','link_image','price'
     ];
     
     protected $hidden = [
