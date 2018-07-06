@@ -2,7 +2,7 @@
         <div class="welcome-slider-area white font16">
             @foreach($slider as $slide)
             <div class="welcome-single-slide">
-                <div class="slide-bg-overlay" style=" background: rgba(0, 0, 0, 0) url('/img/slider/{{$slide->url_img}}') no-repeat scroll center center / cover;"></div>
+                <div class="slide-bg-overlay" style=" background: rgba(0, 0, 0, 0) url('{{asset('storage/img/slider/'.$slide->url_img) }}') no-repeat scroll center center / cover;"></div>
                 <div class="welcome-area">
                     <div class="container">
                         <div class="row flex-v-center">

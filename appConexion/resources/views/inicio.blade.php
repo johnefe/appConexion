@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-    @include('slider.slider')
+	@include('layouts.header')
     @include('layouts.features')
     @include('layouts.content_area')
     @include('layouts.social_networks')

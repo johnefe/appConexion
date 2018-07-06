@@ -23,38 +23,9 @@
 <body data-spy="scroll" data-target=".mainmenu-area" data-offset="90">
 
     <!--START TOP AREA AND SLIDER-->
-    <header class="top-area" id="home">
-        
-        @include('layouts.header')
+    
+    
         @yield('content')
-    </header>
-    <!--END TOP AREA AND SLIDER-->
-
-    <!--FEATURES TOP AREA-->
-    <!--FEATURES TOP AREA END-->
-
-    <!--ABOUT TOP CONTENT AREA-->
-
-    <!--ABOUT TOP CONTENT AREA END-->
-
-    <!--SOCIAL NETWORKS AREA-->
-    
-    <!--SOCIAL NETWORKS AREA END-->
-
-    <!--ABILITIES OUR AREA-->
- 
-    <!--ABILITIES OUR AREA END-->
-
-    <!--ABOUT AREA-->
-   
-    
-    <!-- PROMOTIONS AREA   -->
-
-    <!--COURSE AREA END-->
-
-    <!--CONTACT US AREA-->
-
-    <!--CONTACT US AREA END-->
   
     @include('layouts.footer')
     @include('layouts.script_js')

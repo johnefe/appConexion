@@ -10,10 +10,10 @@ class About extends Model
     protected $table ="ours";
 
     protected $fillable=[
-    	'title','body',
+    	'id','title','body',
     ];
     
     protected $hidden = [
-        'id', 'created_at', 'updated_at',
+        'created_at', 'updated_at',
     ];
 }

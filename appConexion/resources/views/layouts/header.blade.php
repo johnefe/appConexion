@@ -1,4 +1,5 @@
-        <div class="header-top-area" id="scroolup">
+<header class="top-area" id="home">
+   <div class="header-top-area" id="scroolup">
             <!--MAINMENU AREA-->
             <div class="mainmenu-area" id="mainmenu-area">
                 <div class="mainmenu-area-bg"></div>
@@ -21,4 +22,8 @@
                 </nav>
             </div>
             <!--END MAINMENU AREA END-->
-        </div>
+        </div>  
+        @include('slider.slider')   
+</header>
+
+        

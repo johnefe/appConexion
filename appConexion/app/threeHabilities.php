@@ -10,11 +10,11 @@ class threeHabilities extends Model
     protected $table ="three_habilities";
 
     protected $fillable=[
-    	'title','body','link_icon',
+    	'title','body','link_icon','updated_at',
     ];
     
     protected $hidden = [
-        'id', 'created_at', 'updated_at',
+        'id', 'created_at',
     ];
 }
 

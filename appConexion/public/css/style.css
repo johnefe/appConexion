@@ -521,3 +521,20 @@ colores
     color: #B71C1C;
 
 }
+
+.img-prev img{
+    width: 100%;
+}
+.note{
+    color: #757575;
+    font-size: 13px;
+}
+.btn-edit{
+    border-radius: 32px !important;
+    width: 35px;
+
+}
+
+.btn-edit i{
+    width: 25px !important;
+}
