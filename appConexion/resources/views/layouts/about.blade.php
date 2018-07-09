@@ -1,7 +1,7 @@
  <section class="section-padding about-area" id="about">
         <div class="container">
 
-            @foreach($heart as $h)
+            @foreach($contentVideo as $h)
             <div class="row flex-v-center">
                 <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
                     <div class="about-content xs-mb50 wow fadeIn">
@@ -14,7 +14,7 @@
                         <div class="video-promo-content">
                             <span data-video-id="{{$h->link_video}}" class="video-area-popup mb30"><i class="fa fa-play"></i></span>
                         </div>
-                        <img src="/img/about/{{$h->url_img}}" alt="">
+                        <img src="{{asset('storage/img/about/'.$h->url_img) }}" alt="">
                     </div>
                 </div>
             </div>

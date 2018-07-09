@@ -74,10 +74,10 @@
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Promociones<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/admin/promotions/listPromotion">Listar</a>
+                                    <a href="/admin/promotions">Listar</a>
                                 </li>
                                 <li>
-                                    <a href="/admin/promotions/newPromotion">Nueva</a>
+                                    <a href="/admin/promotions/create">Nueva</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

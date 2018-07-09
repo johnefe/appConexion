@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Maker;
 use Session;
+use App\subMaker;
 
 class MakeController extends Controller
 {
@@ -19,21 +20,48 @@ class MakeController extends Controller
         $make = Maker::all();
     	return view('admin/make', compact('make'));
     }
-     public function edit($id)
+    
+    public function edit($id)
     {
          $make=Maker::find($id);
         
         return view('/admin/make/edit',compact('make'));
     }
 
+    public function view($id)
+    {
+         $submake=subMaker::find($id);
+        
+        return view('/admin/make/view',compact('make'));
+    }
+
     public function update(Request $request, $id)
     {
-        $make = Make::find($id);
-        $make->fill($request->all());
-        $make->save();
+        $make = Maker::find($id);
+        $img = $make->url_img;
 
-        Session::flash('success','Editado correctamente.');
+        if($request->hasFile('url_img')){
 
-        return redirect('/admin/make');
+            $url_img= $request->url_img->getClientOriginalName();
+            $request->url_img->storeAs('public/img/blog',$url_img);
+            $make->title= $request->title;
+            $make->url_img=$url_img;
+            $make->save();
+            return redirect('/admin/make');
+
+        }
+        else{
+
+            $url_img=$img;
+            $make->title= $request->title;
+            $make->url_img=$url_img;
+            $make->save();
+            Session::flash('success','Editado correctamente.');
+            return redirect('/admin/make');
+        }
+       
+        return $make;
+
+        
     }
 }

@@ -13,10 +13,10 @@
                 @foreach($promotions as $promotion)
                 <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                     <div class="single-course mb20">
-                        <img src="/img/promotions/{{$promotion->link_image}}" class="img-promotion" alt="">
+                        <img src="{{asset('storage/img/promotions/'.$promotion->link_image) }}" class="img-promotion" alt="">
                         <div class="course-details padding30">
                             <h3 class="font18">{{$promotion->title}}</h3>
-                            <p>{{$promotion->body}}</p>
+                            <p>{{ substr($promotion->body,0,57) }}...</p>
                             <p class="mt30"><a href="#" class="enroll-button">Conocer más</a> <span class="course-price">${{$promotion->price}}</span></p>
                         </div>
                     </div>

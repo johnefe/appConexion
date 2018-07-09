@@ -36,7 +36,7 @@ class SliderController extends Controller
             $title= $request->title;
             $body= $request->body;
             $url_img= $request->url_img->getClientOriginalName();
-
+            $request->url_img->storeAs('public/img/slider',$url_img);
             
             $slider= new Slider;
             $slider->title= $title;

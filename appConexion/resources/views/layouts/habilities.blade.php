@@ -13,7 +13,7 @@
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mty-10">
                     <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="blog-thumb">
-                            <a href="blog.html"><img src="/img/blog/{{$make->url_img}}" class="img-service" alt=""></a>
+                            <a href="blog.html"><img src="{{asset('storage/img/blog/'.$make->url_img) }}" class="img-service" alt=""></a>
                         </div>
                         <div class="blog-details padding10 text-center">
                             <h3 class="blog-title font20 mb30"><a href="blog.html">{{$make->title}}</a></h3>

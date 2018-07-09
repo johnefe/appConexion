@@ -4,17 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Slider extends Model
+class Message extends Model
 {
     //
-    protected $table ="slider";
+    protected $table ="messages";
 
     protected $fillable=[
-    	'id','title','body','url_img',
+    	'name','phone','email','body','created_at',
     ];
     
     protected $hidden = [
-        'created_at', 'updated_at',
+        'id', 'updated_at',
     ];
-    
 }

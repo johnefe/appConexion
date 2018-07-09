@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Mail;
 
 class SuscriptionController extends Controller
 {
@@ -19,6 +20,8 @@ class SuscriptionController extends Controller
 
     public function index(){
 
-    	return view('admin/suscriptions');
+        $mails= Mail::all();
+
+    	return view('admin/suscriptions', compact('mails'));
     }
 }

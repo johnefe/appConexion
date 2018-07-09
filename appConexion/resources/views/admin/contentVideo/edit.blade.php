@@ -4,7 +4,7 @@
 <div id="page-wrapper">
      <div class="row">
          <div class="col-lg-12">
-            	<h1 class="page-header">ACTUALIZAR</h1>
+            	<h1 class="page-header">ACTUALIZAR CONTENIDO</h1>
            		<br><br>     
     	</div>
 	</div>
@@ -14,19 +14,27 @@
         	
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
-                   DATOS 
+                   DATOS
                 </div>
                 <div class="panel-body">
                 	
                     <div class="row">
                     	<!-- formualario para crear nueva diapositiva-->
                    
-                        {!!Form::model($make,['route'=> ['make.update',$make->id], 'method'=>'PUT','files' => true])!!}
+                        {!!Form::model($contentVideo,['route'=> ['contentVideo.update',$contentVideo->id], 'method'=>'PUT','files' => true])!!}
                     	<div class="col-lg-12">
                             
                            <div class="form-group">
                                 {!!Form::label('Título:')!!}
                                 {!!Form::text('title',null,['class'=>'form-control','placeholder'=>'Título'])!!}
+                            </div>
+                            <div class="form-group">
+                                {!!Form::label('id video:')!!}
+                                {!!Form::text('link_video',null,['class'=>'form-control','placeholder'=>'id video youtube'])!!}
+                            </div>
+                            <div class="form-group">
+                                {!!Form::label('icono:')!!}
+                                {!!Form::text('icon',null,['class'=>'form-control','placeholder'=>'Icono'])!!}
                             </div>
                             <div class="form-group" d="divMain">
                                 <div id="divInputLoad">
@@ -35,7 +43,12 @@
                                     <div class="form-group text-center img-prev"  id="file-preview-zone">
                                     </div>
                                 </div>
-                            </div>                       	
+                            </div>
+                            <div class="form-group">
+                                {!!Form::label('Descripción')!!}
+                                {!!Form::textarea('body',null,['class'=>'form-control','placeholder'=>'Aqui decribe el producto','rows'=>'6'])!!}
+                            </div>
+                           	
                         </div>
                         <div class="col-lg-12">
                             <div class="row">

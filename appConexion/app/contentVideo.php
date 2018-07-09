@@ -4,16 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Heart extends Model
+class contentVideo extends Model
 {
-    //
+    
     protected $table ="make_heart";
 
     protected $fillable=[
-    	'title','body','url_img','link_video','icon',
+    	'id','title','body','url_img','link_video','icon','updated_at'
     ];
     
     protected $hidden = [
-        'id', 'created_at', 'updated_at',
+         'created_at',
     ];
 }
