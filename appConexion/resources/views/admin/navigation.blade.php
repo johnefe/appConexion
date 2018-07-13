@@ -42,6 +42,9 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
+                            <a href="/admin/date"><i class="fa fa-table fa-fw"></i>Mis datos</a>
+                        </li>
+                        <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i>Slider principal<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -64,7 +67,16 @@
                             <a href="/admin/networks"><i class="fa fa-wrench fa-fw"></i> Redes sociales</a>
                         </li>
                         <li>
-                            <a href="/admin/make"><i class="fa fa-sitemap fa-fw"></i> Lo que podemos hacer</a>
+                            <!--<a href="/admin/make"><i class="fa fa-sitemap fa-fw"></i> Lo que podemos hacer</a>-->
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i>Lo que podemos hacer<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="/admin/make">Listar</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/make/create">Nuevo</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="/admin/contentVideo"><i class="fa fa-files-o fa-fw"></i> Contenido y video</a>

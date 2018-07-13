@@ -234,7 +234,7 @@ jQuery(document).on('ready', function ($) {
     /*---------------------------
         PLACEHOLDER ANIMATION
     ----------------------------*/
-    Placeholdem(document.querySelectorAll('[placeholder]'));
+   // Placeholdem(document.querySelectorAll('[placeholder]'));
 
 }(jQuery));
 

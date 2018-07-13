@@ -9,8 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin CG</title>
-
+    <title>Admin</title>
+    <link rel="shortcut icon" type="image/ico" href="/img/favicon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

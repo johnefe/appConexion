@@ -12,9 +12,8 @@
                             <ul id="nav" class="nav navbar-nav pull-right">
                                 <li class="active"><a href="#home">Inicio</a></li>
                                 <li><a href="#features">Nosotros</a></li>
-                                <li><a href="#courses">Servicios</a></li>
-                                <li><a href="#testmonial">Nuestros Trabajos</a></li>
-                                <li><a href="#blog">Promociones</a></li>
+                                <li><a href="#trabajos">Nuestros Trabajos</a></li>
+                                <li><a href="#promociones">Promociones</a></li>
                                 <li><a href="#contact">Contáctanos</a></li>
                             </ul>
                         </div>

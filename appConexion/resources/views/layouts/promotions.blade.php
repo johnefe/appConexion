@@ -1,5 +1,5 @@
 <!-- PROMOTIONS AREA   -->
-    <section class="testmonial-area bg-theme section-padding " id="courses">
+    <section class="testmonial-area bg-theme section-padding " id="promociones">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
@@ -17,7 +17,7 @@
                         <div class="course-details padding30">
                             <h3 class="font18">{{$promotion->title}}</h3>
                             <p>{{ substr($promotion->body,0,57) }}...</p>
-                            <p class="mt30"><a href="#" class="enroll-button">Conocer más</a> <span class="course-price">${{$promotion->price}}</span></p>
+                            <p class="mt30"><a href="/promociones/{{$promotion->id}}" class="enroll-button">Conocer más</a> <span class="course-price">${{$promotion->price}}</span></p>
                         </div>
                     </div>
                 </div>

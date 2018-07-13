@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                          <div class="form-group text-center">
-                                            <a href="/admin/make/{{$make->id}}/view" class="btn btn-default btn-circle"><span class="fa fa-eye "></span></a>
+                                            <a href="/admin/maker/{{$make->id}}/edit" class="btn btn-default btn-circle"><span class="fa fa-eye "></span></a>
                                         </div>
                                 </div>
                             </div>

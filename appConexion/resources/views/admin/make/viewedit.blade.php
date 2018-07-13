@@ -4,29 +4,29 @@
 <div id="page-wrapper">
      <div class="row">
          <div class="col-lg-12">
-            	<h1 class="page-header">ACTUALIZAR DIAPOSITIVA</h1>
-           		<br><br>     
-    	</div>
-	</div>
-	<div class="row">
+                <h1 class="page-header">ACTUALIZAR</h1>
+                <br><br>     
+        </div>
+    </div>
+    <div class="row">
         @include('messages._messages')          
         <div class="col-lg-6 col-lg-offset-3">
-        	
+            
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
-                   DATOS DIAPOSITIVA
+                   DATOS 
                 </div>
                 <div class="panel-body">
-                	
+                    
                     <div class="row">
-                    	<!-- formualario para crear nueva diapositiva-->
+                        <!-- formualario para crear nueva diapositiva-->
                    
-                        {!!Form::model($slider,['route'=> ['slider.update',$slider->id], 'method'=>'PUT','files' => true])!!}
-                    	<div class="col-lg-12">
+                        {!!Form::model($make,['route'=> ['makes.update',$make->id], 'method'=>'PUT','files' => true])!!}
+                        <div class="col-lg-12">
                             
                            <div class="form-group">
                                 {!!Form::label('Título:')!!}
-                                {!!Form::text('title',null,['class'=>'form-control','placeholder'=>'Título de la diapositiva'])!!}
+                                {!!Form::text('title',null,['class'=>'form-control','placeholder'=>'Título'])!!}
                             </div>
                             <div class="form-group" d="divMain">
                                 <div id="divInputLoad">
@@ -39,8 +39,7 @@
                             <div class="form-group">
                                 {!!Form::label('Descripción')!!}
                                 {!!Form::textarea('body',null,['class'=>'form-control','placeholder'=>'Descripción','rows'=>'3'])!!}
-                            </div>
-                           	
+                            </div>                         
                         </div>
                         <div class="col-lg-12">
                             <div class="row">

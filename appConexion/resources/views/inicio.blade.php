@@ -9,4 +9,5 @@
     @include('layouts.about')
     @include('layouts.promotions')
     @include('layouts.contact')
+    @include('layouts.footer')
 @stop

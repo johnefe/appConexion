@@ -12,7 +12,7 @@
 		 <!-- /.panel -->
 		 @include('messages._messages')
 		 @foreach($about as $about)
-		 <div class="col-lg-4">
+		 <div class="col-lg-4 col-lg-offset-4">
             <div class="panel panel-success">
                 <div class="panel-heading">
                    {{$about->title}} 

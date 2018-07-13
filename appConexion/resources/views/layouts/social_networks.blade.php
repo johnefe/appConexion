@@ -7,7 +7,7 @@
                 @foreach($redes as $red)
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="single-fun-fact mb30 wow fadeInUp" data-wow-delay="0.1s">
-                        <a href="{{$red->link}}" target="_blank"><i class="{{$red->logo}}"></i></a>
+                        <a href="{{$red->link}}" target="_blank"><i class="{{$red->logo}} fa-5x" ></i></a>
                         <!--<h3 class="font60 xs-font26"><span class="counter">20</span>k</h3>-->
                         <p class="font600">{{$red->name}}</p>
                     </div>

@@ -10,6 +10,7 @@ use App\About;
 use App\Maker;
 use App\contentVideo;
 use App\Promotion;
+use App\Message;
 
 class InicioController extends Controller
 {
@@ -24,6 +25,19 @@ class InicioController extends Controller
     	$slider= Slider::all();
     	$redes=NetWorks::all();
     	return view('inicio', compact('redes','threeHabilities','slider','about','makes','contentVideo','promotions'));
+
+    }
+
+    public function store(Request $request){
+
+        $mensaje= new Message;
+        $mensaje->name=$request->name;
+        $mensaje->phone=$request->phone;
+        $mensaje->email=$request->email;
+        $mensaje->body=$request->body;
+
+        $mensaje->save();
+        return redirect('/');
 
     }
 }

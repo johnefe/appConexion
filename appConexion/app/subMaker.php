@@ -9,11 +9,18 @@ class subMaker extends Model
     protected $table ="subMaker";
 
     protected $fillable=[
-    	'id','title','body','body_2','body_3','url_img',
+    	'id','title','body','url_img','id_maker'
     ];
     
     protected $hidden = [
         'created_at', 'updated_at',
     ];
+
+
+    public function maker(){
+
+    	return  $this->belongsTo('App\Maker');
+    }
+    
 }
 //revisarlo ps lleva foranea

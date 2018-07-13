@@ -16,4 +16,9 @@ class Maker extends Model
     protected $hidden = [
         'created_at', 'updated_at',
     ];
+
+    public function submaker()
+    {
+        return $this->hasMany('App\subMaker');
+    }
 }
