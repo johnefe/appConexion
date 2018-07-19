@@ -89,8 +89,6 @@ class SliderController extends Controller
             $slider->save();
             return redirect('/admin/slider');
         }
-       
-        return $slider;
     }
 
 

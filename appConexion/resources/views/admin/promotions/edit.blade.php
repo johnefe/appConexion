@@ -1,10 +1,10 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper">
+<div id="page-wrapper" class=" bg-gray-2">
      <div class="row">
          <div class="col-lg-12">
-            	<h1 class="page-header">ACTUALIZAR PROMOCIÓN</h1>
+            	<h1 class="page-header titulo-3">ACTUALIZAR PROMOCIÓN</h1>
            		<br><br>     
     	</div>
 	</div>
@@ -13,15 +13,16 @@
         <div class="col-lg-6 col-lg-offset-3">
         	
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
-                   DATOS
+                <div class="panel-heading text-center bg-blue-1">
+                  <h4 class="titulo-4"> DATOS</h4>
                 </div>
                 <div class="panel-body">
                 	
-                    <div class="row">
+                    <div class="row texto">
                     	<!-- formualario para editar promocion-->
                    
                         {!!Form::model($promotion,['route'=> ['promotions.update',$promotion->id], 'method'=>'PUT','files' => true])!!}
+                          @csrf
                     	<div class="col-lg-12">
                             
                            <div class="form-group">
@@ -39,14 +40,17 @@
                                     <div class="form-group text-center img-prev"  id="file-preview-zone">
                                     </div>
                                 </div>
+                                 <div  id="prev">
+                                    <img src="{{asset('storage/img/promotions/'.$promotion->link_image) }}" width="100%;" height="250px">
+                                </div>
                             </div>
                             <div class="form-group">
                                 {!!Form::label('Descripción #1')!!}
-                                {!!Form::textarea('body',null,['class'=>'form-control','placeholder'=>'Aqui decribe el producto','rows'=>'3'])!!}
+                                {!!Form::textarea('body',null,['class'=>'form-control','placeholder'=>'Aqui decribe el producto','rows'=>'6'])!!}
                             </div>
                             <div class="form-group">
                                 {!!Form::label('Descripción #2')!!}
-                                {!!Form::textarea('body_2',null,['class'=>'form-control','placeholder'=>'Aqui decribe el producto','rows'=>'3'])!!}
+                                {!!Form::textarea('body_2',null,['class'=>'form-control','placeholder'=>'Aqui decribe el producto','rows'=>'6'])!!}
                             </div>
                            	
                         </div>
@@ -54,7 +58,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="submit" class="form-control btn btn-success" name="" value="ACTUALIZAR">
+                                        <input type="submit" class="form-control btn bg-blue-1 titulo-4" name="" value="ACTUALIZAR">
                                     </div>
                                 </div>
                                 
@@ -99,6 +103,7 @@
  
     var fileUpload = document.getElementById('url_img');
     fileUpload.onchange = function (e) {
+         document.getElementById("prev").innerHTML="";
         readFile(e.srcElement);
     }
  

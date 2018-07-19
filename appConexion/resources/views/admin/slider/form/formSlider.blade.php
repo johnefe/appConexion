@@ -1,19 +1,20 @@
 <div class="form-group">
-
-    {!!Form::text('title',null,['class'=>'form-control','placeholder'=>'Título de la diapositiva'])!!}
+      @csrf
+    {!!Form::text('title',null,['class'=>'form-control texto','placeholder'=>'Título de la diapositiva'])!!}
 </div>
 <div class="form-group" d="divMain">
 	<div id="divInputLoad">
-	    <small class="note"><strong>Escoge una imágen:</strong>El nombre de la imágen no debe contener tíldes.</small>
-		{!!Form::file('url_img',['class'=>'form-control', 'id'=>'url_img', 'accept'=>'image/*'])!!}
+	    <small class="note texto"><strong>Escoge una imágen:</strong>El nombre de la imágen no debe contener tíldes.</small>
+		{!!Form::file('url_img',['class'=>'form-control texto', 'id'=>'url_img', 'accept'=>'image/*'])!!}
 
 		<div class="form-group text-center img-prev"  id="file-preview-zone">
 		</div>
 	</div>
 </div>
 <div class="form-group">
+   
 	{!!Form::label('Descripción')!!}
-	{!!Form::textarea('body',null,['class'=>'form-control','placeholder'=>'Descripción de la diapositiva','rows'=>'3'])!!}
+	{!!Form::textarea('body',null,['class'=>'form-control texto','placeholder'=>'Descripción de la diapositiva','rows'=>'3'])!!}
 </div>
 <script>
     function readFile(input) {

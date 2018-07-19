@@ -1,12 +1,12 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper">
+<div id="page-wrapper" class=" bg-gray-2">
 
      <div class="row">
 
          <div class="col-lg-12">
-            	<h1 class="page-header">NUEVA TRABAJO</h1>
+            	<h1 class="page-header titulo-3">NUEVA TRABAJO</h1>
            		<br><br>     
     	</div>
 	</div>
@@ -15,14 +15,15 @@
         <div class="col-lg-6 col-lg-offset-3">
         	
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
+                <div class="panel-heading text-center bg-blue-1">
                  
                 </div>
                 <div class="panel-body">
                 	@include('messages._messages')
-                    <div class="row">
+                    <div class="row texto">
                     	<!-- formualario para crear nueva diapositiva-->
                     	{!!Form::open(['route'=> 'make.store', 'method'=>'POST','files' => true])!!}
+                          @csrf
                     	<div class="col-lg-12">
                             <div class="form-group">
 
@@ -54,7 +55,7 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="submit" class="form-control btn btn-success" name="" value="REGISTRAR">
+                                        <input type="submit" class="form-control btn bg-blue-1 titulo-4" name="" value="REGISTRAR">
                                     </div>
                                 </div>
                             </div>   

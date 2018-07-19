@@ -44,6 +44,7 @@
                                 <div class="col-lg-6">
                                          <div class="form-group text-center">
                                             {!!Form::open(['route'=>['maker.destroy',$make->id],'method'=>'DELETE'])!!}
+                                              @csrf
                                                 <button type="submit" class=" btn btn-default btn-circle" ><span class="fa fa-trash fa-1x"></span></button>
                                             {!!Form::close()!!}
                                         </div>

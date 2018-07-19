@@ -1,11 +1,11 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper">
+<div id="page-wrapper" class="bg-gray-2">
      <div class="row">
          <div class="col-lg-12">
-            	<h1 class="page-header">LO QUE PODEMOS HACER</h1>
-            	<h4 class="note">Aquí puedes gestionar la información de lo que nuestra empresa puede hacer, en otras palabras se podria mostrar un catálogo de los trabajos realizados.</h4><br><br>     
+            	<h1 class="page-header titulo-3">LO QUE PODEMOS HACER</h1>
+            	<h4 class="note texto">Aquí puedes gestionar la información de lo que nuestra empresa puede hacer, en otras palabras se podria mostrar un catálogo de los trabajos realizados.</h4><br><br>     
     	</div>
 	</div>
 	<div class="row">
@@ -16,12 +16,12 @@
         <div class="col-lg-4">
         	
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
-                  {{$make->title}}
+                <div class="panel-heading text-center bg-blue-1">
+                  <h4 class="titulo-4">{{$make->title}}</h4>
                 </div>
                 <div class="panel-body">
                 	 
-                    <div class="row">
+                    <div class="row texto">
                     	<div class="col-lg-12">
                             <form role="form">
                                 		

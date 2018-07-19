@@ -1,11 +1,11 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper">
+<div id="page-wrapper" class=" bg-gray-2">
      <div class="row">
          <div class="col-lg-12">
-                <h1 class="page-header">Promociones</h1>
-                <h4 class="note">Aquí puedes gestionar la información de las promociones que se van publicando.</h4><br><br>     
+                <h1 class="page-header titulo-3" >Promociones</h1>
+                <h4 class="note texto">Aquí puedes gestionar la información de las promociones que se van publicando.</h4><br><br>     
         </div>
     </div>
     <div class="row">
@@ -16,12 +16,12 @@
         <div class="col-lg-4">
             
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
-                  {{$promotion->title}}
+                <div class="panel-heading text-center bg-blue-1">
+                  <h4 class="titulo-4">{{$promotion->title}}</h4>
                 </div>
                 <div class="panel-body">
                      
-                    <div class="row">
+                    <div class="row texto">
                         <div class="col-lg-12">
                             <form role="form">
                                         
@@ -41,6 +41,7 @@
                                 <div class="col-lg-6">
                                     <div class="form-group text-center">
                                         {!!Form::open(['route'=>['promotions.destroy',$promotion->id],'method'=>'DELETE'])!!}
+                                          @csrf
                                         <button type="submit" class=" btn btn-default btn-circle" ><span class="fa fa-trash fa-1x"></span></button>
                                         {!!Form::close()!!}
                                     </div>

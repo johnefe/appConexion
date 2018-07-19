@@ -1,21 +1,21 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper"><br><br><br>
+<div id="page-wrapper" class=" bg-gray-2"><br><br><br>
   <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-comment fa-fw"></i>Mensajes recibidos </h4>
+                        <div class="panel-heading bg-blue-1">
+                            <h4 class="titulo-4"><i class="fa fa-comment fa-fw"></i>Mensajes recibidos </h4>
                         </div>
                         <!-- .panel-heading -->
-                        <div class="panel-body">
+                        <div class="panel-body texto">
                             <div class="panel-group" id="accordion">
                                 @foreach($messages as $message)
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$message->id}}">{{$message->name}}...</a> <small> {{$message->created_at}}</small>
+                                            <a data-toggle="collapse" data-parent="#accordion" class="texto" href="#collapse{{$message->id}}">{{$message->name}}...</a> <small> {{$message->created_at}}</small>
                                         </h4>
                                     </div>
                                     <div id="collapse{{$message->id}}" class="panel-collapse collapse ">

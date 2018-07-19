@@ -22,6 +22,7 @@
                         <!-- formualario para crear nueva diapositiva-->
                    
                         {!!Form::model($make,['route'=> ['makes.update',$make->id], 'method'=>'PUT','files' => true])!!}
+                          @csrf
                         <div class="col-lg-12">
                             
                            <div class="form-group">

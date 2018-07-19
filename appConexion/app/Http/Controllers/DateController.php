@@ -15,7 +15,48 @@ class DateController extends Controller
 
     public function index(){
 
-    	$data= Date::all();
-    	return view('admin/date', compact('data'));
+    	$date= Date::all();
+    	return view('admin/date', compact('date'));
+    }
+
+    public function edit($id)
+    {
+        $date = Date::find($id);
+        
+        return view('/admin/date/edit',compact('date'));
+    }
+
+   
+    public function update(Request $request, $id)
+    {
+        $date = Date::find($id);
+        $img = $date->logo;
+
+        if($request->hasFile('logo')){
+
+            $logo= $request->logo->getClientOriginalName();
+            $request->logo->storeAs('public/img/logo',$logo);
+            $date->title= $request->title;
+ 			$date->email=$request->email;
+ 			$date->phone=$request->phone;
+ 			$date->city=$request->city;
+ 			$date->address=$request->address;
+            $date->logo=$logo;
+            $date->save();
+            return redirect('/admin/date');
+
+        }
+        else{
+
+            $logo=$img;
+            $date->title= $request->title;
+     		$date->email=$request->email;
+ 			$date->phone=$request->phone;
+ 			$date->city=$request->city;
+ 			$date->address=$request->address;
+            $date->logo=$logo;
+            $date->save();
+            return redirect('/admin/date');
+        }
     }
 }

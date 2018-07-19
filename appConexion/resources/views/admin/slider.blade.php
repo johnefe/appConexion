@@ -3,11 +3,11 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper">
+<div id="page-wrapper" class="bg-gray-2">
      <div class="row">
          <div class="col-lg-12">
-            	<h1 class="page-header">Slider</h1>
-            	<h4 class="note">Aquí puedes gestionar todas las imágenes con su respectivo título y descripción que irán en las diapositivas que esta presente en el inicio de esta aplicación.</h4><br><br>     
+            	<h1 class="page-header titulo-3">Slider</h1>
+            	<h4 class="note texto">Aquí puedes gestionar todas las imágenes con su respectivo título y descripción que irán en las diapositivas que esta presente en el inicio de esta aplicación.</h4><br><br>     
     	</div>
 	</div>
 	<div class="row">
@@ -18,8 +18,8 @@
         <div class="col-lg-4">
         	
             <div class="panel panel-default">
-                <div class="panel-heading text-center">
-                  <label>{{$slider->title}}</label>
+                <div class="panel-heading text-center bg-blue-1">
+                  <label class="titulo-4">{{$slider->title}}</label>
                 </div>
                 <div class="panel-body">
                 	 
@@ -34,7 +34,7 @@
                                             <img src="{{asset('storage/img/slider/'.$slider->url_img) }}" width="100%;" height="250px">
                                         </div>
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="3" disabled>{{$slider->body}}</textarea>
+                                            <textarea class="form-control texto" rows="5" disabled>{{$slider->body}}</textarea>
                                         </div>
 
                             </form>

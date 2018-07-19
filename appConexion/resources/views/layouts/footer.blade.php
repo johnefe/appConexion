@@ -5,16 +5,18 @@
                 <div class="row">
                     <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
                         <div class="single-footer footer-about sm-mb50 xs-mb50 sm-center xs-center">
+                            
+                            @foreach($date as $date)
                             <div class="footer-logo mb30">
-                                <!--<a href="#"><img src="assest/img/logo.png" alt=""></a>-->
-                                <a href="www.conexiongraficapasto.com" style="color: #fff;">Conexión Grafica Pasto</a>
+                                <a href="www.conexiongraficapasto.com" target="_blank" style="color: #fff;">{{$date->title}}</a>
                             </div>
                             
-                            <p>San Juan de Pasto</p>
-                            <small>Calle 21 # 24 -64 Centro</small><br>
-                            <small>Conexiongraficapasto@gmail.com</small><br>
-                            <small>Telefono: 3173187766</small>
-                   
+                          
+                            <p>{{$date->phone}}</p>
+                            <p>{{$date->address}}</p>
+                            <p>{{$date->email}}</p>
+                              <p>{{$date->city}}</p>
+                            @endforeach
                         </div>
                     </div>
                     <div class="col-md-2 col-lg-2 col-sm-4 col-xs-12">

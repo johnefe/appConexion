@@ -48,5 +48,14 @@ Route::resource('/','InicioController');
 Route::resource('mensajes','InicioController');
 Route::resource('news','NewsletterController');
 
+/*exportar datos*/
+	
+//Route::get('export-users', 'ExcelEmailsController@exportEmails');
+//Route::get('/export-users/{type}', 'ExcelEmailsController@exportEmails')->name('export.file');
+//Route::get('downloadExcel/{type}', 'ExcelEmailsController@downloadExcel');
+Route::get('/ex', function () {
+    return \Excel::download(new App\Exports\EmailsExports, 'invoices.xlsx');
+});
+
 
 

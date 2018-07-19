@@ -1,12 +1,12 @@
 @extends('admin.base')
 
 @section('content')
-<div id="page-wrapper"><br><br><br>
+<div id="page-wrapper" class="bg-gray-2"><br><br><br>
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-4">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-envelope fa-fw"></i> Correos electrónicos.
+                        <div class="panel-heading bg-blue-1">
+                            <h4 class="titulo-4"><i class="fa fa-envelope fa-fw"></i> Correos electrónicos.</h4>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -20,7 +20,8 @@
                                	@endforeach
                             </div>
                             <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">Descargar en archivo plano</a>
+                            <!--<a href="#" class="btn btn-default btn-block">Descargar en archivo plano</a>-->
+                             <a href="{{ URL::to('downloadExcel/xls') }}"><button class="btn btn-success">Download Excel xls</button></a>
                         </div>
 
 	</div>
